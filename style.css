@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+table{
+    border: solid 1px;
+    padding: 5px;
+}
+
+table thead th{
+    border: solid 1px;
+    padding: 5px;
+}
+
+table tr td{
+    border: solid 1px;
+    padding: 5px;
+}
+
+/* Fixez le bouton sur le côté gauche de la page the button on the left side of the page */
+.open-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Bouton sur la page */
+.open-button {
+    color: black;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+/* Positionnez la forme Popup */
+.login-popup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+/* Masquez la forme Popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-45%, 5%);
+    border: 2px solid #666;
+    z-index: 9;
+}
+
+/* Conteneur de la forme */
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Champs de saisie */
+.form-container input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+}
+
+
+/* Bouton de connexion */
+.form-container .btn {
+    color: black;
+    padding: 12px 20px;
+    border: solid 1px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}

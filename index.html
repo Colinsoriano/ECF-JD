@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ECF Tableau/Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <body>
+            
+            <!--
+                Il s'agit de la modale d'ajout/création d'un nouvel employé. 
+                Mais je n'arrive pas à faire fonctionner le bouton Ajouter.
+                J'ai préféré laisser quand le même le code ...
+                Je sais que je rends un devoir incomplet. Mais j'ai vraiment fait ce que j'ai pu.
+            -->
+
+            <!-- <h1>Ajouter un employé</h1>
+            <div class="open-btn">
+                <button class="open-button" onclick="openForm()">Ajouter un employé</button>
+            </div>
+            <div class="login-popup">
+                <div class="form-popup" id="popupForm">
+                    <form class="form-container">
+                        <h2>Ajouter un nouvel employé</h2>
+                        <input type="text" id="firstname" placeholder="Prénom" name="firstname" required />
+                        <input type="text" id="lastname" placeholder="Nom" name="lastname" required />
+                        <input type="text" id="birthdate" placeholder="Date de naissance" name="birthdate" required />
+                        <button type="submit" name="add" class="btn" onclick="addUser()">Ajouter</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Annuler</button>
+                    </form>
+                </div>
+            </div> -->
+
+            
+
+            <h1>Ajouter un employé</h1>
+            <form method="POST" name="sample">
+                Prénom:<br><input type="text" name="firstname"><br><br>
+                Nom : <br><input type="text" name="name"><br><br>
+                Date de naissance : <br><input type="date" name="birthdate">
+                <br><br>
+                <input type="button" name="add" value="Ajouter" onclick="addUser();">
+                <hr>
+
+                <table id="tbl">
+                    <tbody>
+                        <thead>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Date de naissance</th>
+                            <th>Supprimer</th>
+                            <th>Mettre à jour</th>
+                        </thead>
+                    </tbody>
+                </table>
+            </form>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
